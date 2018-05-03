@@ -1,0 +1,19 @@
+{
+  "name": "bookmike",
+  "version": "1.0.0",
+  "description": "Personal Book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node_modules/.bin/live-server",
+    "firebase": "node_modules/.bin/firebase"
+  },
+  "author": "Miguel Silva",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "firebase-tools": "^3.18.4",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

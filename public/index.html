@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>PERSONAL BOOK</title>
+  </head>
+  <body>
+
+    <nav class="navbar-dark">
+      <div class="p-2 mb-2 bg-info">
+        <ul class="nav justify-content-end">
+          <li class="navbar nav-item trans">
+            <a class="nav-link text-white" data-target="#inicio">Inicio</a>
+          </li>
+          <li class="navbar nav-item trans">
+            <a class="nav-link text-white" data-target="#sobreMi">Acerca</a>
+          </li>
+          <li class="navbar nav-item trans">
+            <a class="nav-link text-white" data-target="#formacion">Formación</a>
+          </li>
+          <li class="navbar nav-item trans">
+            <a class="nav-link text-white" data-target="#experience">Experiencia</a>
+          </li>
+          <li class="nav-item dropdown navbar">
+            <a class=" text-white dropdown-toggle" id="navButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+              Contacto
+              <div class="dropdown-menu dropdown-menu-right dropbg" aria-labelledby="navButton">
+                <a class="dropdown-item" href="#"><img class="wpp" src="assets/img/wpp.png" alt="wpp"> (55) 2878 9388</a>
+                <a class="dropdown-item" href="#">📞 (55) 3547 1780 Ext 114</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><img class="wpp" src="assets/img/gmail.png" alt="wpp"> miguelavsilva7@gmail.com</a>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="row" id="inicio">
+      <article class="col-6">
+        <h1>Miguel Silva</h1>
+        <img class="me" src="assets/img/me.jpg" alt="me">
+      </article>
+
+      <div class="col-6 cover-card-container">
+        <article class="cover-card">
+          <h2><li class="modal-button skill1-button">Frontend Developer</li></h2>
+          <h2><li class="modal-button skill2-button">Catering Manager</li></h2>
+          <h2><li class="modal-button skill3-button">Event Manager</li></h2>
+        </article>
+      </div>
+      <section class="custom-modal not-showing">
+        <div class="modal-background"></div>
+
+        <article class="custom-modal-card skill1-modal">
+        <div class="close-modal">
+          <i class="far fa-times-circle"></i>
+        </div>
+          <h3>Frontend Developer</h3>
+          <img class="horizontal" src="assets/img/balancefront.jpg" alt="balancefront">
+        </article>
+
+        <article class="custom-modal-card skill2-modal">
+        <div class="close-modal">
+          <i class="far fa-times-circle"></i>
+        </div>
+          <h3>Catering Manager</h3>
+          <img class="horizontal" src="assets/img/cat.jpg" alt="cateringmanager">
+        </article>
+
+        <article class="custom-modal-card skill3-modal">
+        <div class="close-modal">
+          <i class="far fa-times-circle"></i>
+        </div>
+          <h3>Event Manager</h3>
+          <img class="vertical" src="assets/img/event.png" alt="eventmanager">
+        </article>
+
+      </section>
+
+    </header>
+
+    <section class="about-me row content" id="sobreMi">
+      <h2 class="col-12">Sobre <span>Mi</span></h2>
+      <div class="col-3 left-column">
+        <h3>Porqué desarrollo web?</h3>
+          <br>
+          <li>Desarrollo de proyectos personales</li>
+          <br>
+          <li>Fusión de carreras</li>
+          <br>
+          <li>Inducción a la comunidad</li>
+          <br>
+          <li>Crecimiento profesional</li>
+          <br>
+          <li>Calidad de vida</li>
+          <br>
+        <button class="skill4-button modal-button">La vida es un meme!</button>
+          <section class="custom-modal not-showing">
+
+              <article class="custom-modal-card skill4-modal mejora">
+                <div class="close-modal">
+                  <i class="far fa-times-circle"></i>
+                </div>
+                  <br>
+                  <img class="vertical" src="assets/img/mejora.jpg" alt="mejora">
+              </article>
+          </section>
+      </div>
+      <div class="col-6">
+        <img class="millennial" src="assets/img/millennial.png" alt="millennial">
+      </div>
+    </section>
+
+    <section class="background-section row col-12">
+      <article class="col-12 col-sm-4 col-md-3 magic-box-container">
+        <div class="show-magic-box" data-active-box="soccer">
+          <div class="magic-box-content soccer">
+            <h3>Futbol</h3>
+            <img class="img-about" src="assets/img/chivas.jpeg" alt="games">
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-sm-4 col-md-3 magic-box-container">
+        <div class="show-magic-box" data-active-box="games">
+          <div class="magic-box-content games">
+            <h3>Videojuegos</h3>
+            <img class="img-about" src="assets/img/games.png" alt="games">
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-sm-4 col-md-3 magic-box-container">
+        <div class="show-magic-box" data-active-box="nfl">
+          <div class="magic-box-content nfl">
+            <h3>F. Americano</h3>
+            <img class="img-about" src="assets/img/nfl.jpg" alt="games">
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-sm-4 col-md-3 magic-box-container">
+        <div class="show-magic-box" data-active-box="moba">
+          <div class="magic-box-content moba">
+            <h3>MOBA</h3>
+            <img class="img-about" src="assets/img/moba.jpg" alt="games">
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="form row" id="formacion">
+      <h2 class="col-12">Formación <span>Académica</span></h2>
+      <div class="col-1">
+
+      </div>
+      <div class="col-3">
+        <br>
+        <a href="https://centraal.academy/"><img class="formacion" src="assets/img/cacademy.png" alt="cacademy"></a>
+        <br>
+        <br>
+        <img class="formacion" src="assets/img/cacademy.png" alt="cacademy">
+        <br>
+      </div>
+      <div class="col-1">
+
+      </div>
+
+      <div class="col-5 carousel slide" data-ride='carousel' id="carouselExampleIndicators">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel-line"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel-line"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel-line"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class="carousel-line"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="file:///Users/miguelsilva/Desktop/CENTRAAL/GOOGLE/index.html"><img class="img-carousel d-block w-100" src="assets/img/clone.jpg" alt="slideclone"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="file:///Users/miguelsilva/Desktop/CENTRAAL/API/index.html"><img class="img-carousel d-block w-100" src="assets/img/api.jpg" alt="slideapi"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="file:///Users/miguelsilva/Desktop/CENTRAAL/JAVASCRIPT/MUESTRA/index.html"><img class="img-carousel d-block w-100" src="assets/img/muestra.jpg" alt="slidemuestra"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="file:///Users/miguelsilva/Desktop/CENTRAAL/stone_paper_scissors/index.html"><img class="img-carousel d-block w-100" src="assets/img/ppt.jpg" alt="slidemuestra"></a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+    </section>
+
+    <section class="background-experience row" id="experience">
+      <h2>Experiencia <span>Laboral</span></h2>
+      <div class="grid-container">
+        <article class="experience1">
+          <div class="show-magic-box experience1" data-active-box="la-fete">
+            <div class="magic-box-content la-fete experience1">
+              <img class="experience1" src="assets/img/lafete.jpg" alt="lafete">
+            </div>
+          </div>
+        </article>
+        <article class="experience2">
+          <div class="show-magic-box experience2" data-active-box="exp2">
+            <div class="magic-box-content exp2 experience2">
+              <img class="experience2" src="assets/img/exp2.jpg" alt="exp2">
+            </div>
+          </div>
+        </article>
+        <article class="experience3">
+          <div class="show-magic-box experience3" data-active-box="exp3">
+            <div class="magic-box-content exp3 experience3">
+              <img class="experience3" src="assets/img/exp9.jpg" alt="exp3">
+            </div>
+          </div>
+        </article>
+        <article class="experience4">
+          <div class="show-magic-box experience4" data-active-box="exp4">
+            <div class="magic-box-content exp4 experience4">
+              <img class="experience4" src="assets/img/exp4.jpg" alt="exp4">
+            </div>
+          </div>
+        </article>
+
+
+
+        <article class="experience5">
+          <div class="show-magic-box experience5" data-active-box="exp5">
+            <div class="magic-box-content exp5 experience5">
+              <img class="experience5" src="assets/img/exp5.jpg" alt="exp5">
+            </div>
+          </div>
+        </article>
+
+
+        <article class="experience6">
+          <div class="show-magic-box experience6" data-active-box="exp6">
+            <div class="magic-box-content exp6 experience6">
+              <img class="experience6" src="assets/img/exp6.jpg" alt="exp6">
+            </div>
+          </div>
+        </article>
+
+        <article class="experience7">
+          <div class="show-magic-box experience7" data-active-box="exp7">
+            <div class="magic-box-content exp7 experience7">
+              <img class="experience7" src="assets/img/exp14.jpg" alt="exp7">
+            </div>
+          </div>
+        </article>
+
+        <article class="experience8">
+          <div class="show-magic-box experience8" data-active-box="exp8">
+            <div class="magic-box-content exp8 experience8">
+              <img class="experience8" src="assets/img/exp7.jpg" alt="exp8">
+            </div>
+          </div>
+        </article>
+
+        <article class="experience10">
+          <div class="show-magic-box experience10" data-active-box="exp10">
+            <div class="magic-box-content exp10 experience10">
+              <img class="experience10" src="assets/img/exp20.jpg" alt="exp10">
+            </div>
+          </div>
+        </article>
+
+        <article class="experience9">
+          <div class="show-magic-box experience9" data-active-box="exp9">
+            <div class="magic-box-content exp9 experience9">
+              <img class="experience9" src="assets/img/exp13.jpg" alt="exp9">
+            </div>
+          </div>
+        </article>
+
+        <article class="experience11">
+          <div class="show-magic-box experience11" data-active-box="exp11">
+            <div class="magic-box-content exp11 experience11">
+              <img class="experience11" src="assets/img/exp23.jpg" alt="exp11">
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+      <footer class="finish">
+        <div class="thanks">
+          <div class="thanks-lay">
+              Agradecimientos
+          </div>
+          <div class="col-12">
+            <div class="col-5 thanks-d left">
+              <div>Centraal</div>
+              <div>Centraal Academy</div>
+            </div>
+            <div class="col-5 thanks-d right">
+              <div>Grupo Frontend-Básico #2</div>
+              <div>Asistentes</div>
+            </div>
+          </div>
+        </div>
+        <div class="finishblack">
+          <p class="cop">© 2018 Centraal Academy CDMX - Show me your code! - Generación #2</p>
+        </div>
+
+
+
+      </footer>
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
